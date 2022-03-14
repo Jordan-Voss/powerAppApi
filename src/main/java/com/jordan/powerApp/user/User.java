@@ -39,16 +39,13 @@ public class User implements UserDetails {
 
 	private Boolean enabled;
 
-	public User(String firstName, String lastName, String username, String email, String password, Role role,
-			Boolean isLocked, Boolean enabled) {
+	public User(String firstName, String lastName, String username, String email, String password, Role role) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.username = username;
 		this.email = email;
 		this.password = password;
 		this.role = role;
-		this.isLocked = isLocked;
-		this.enabled = enabled;
 	}
 
 	@Override
