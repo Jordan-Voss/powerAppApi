@@ -21,23 +21,15 @@ public class User implements UserDetails {
 	@SequenceGenerator(name = "user_sequence", sequenceName = "user_sequence", allocationSize = 1)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_sequence")
 	private Long id;
-
 	private String firstName;
-
 	private String lastName;
-
 	private String username;
-
 	private String email;
-
 	private String password;
-
 	@Enumerated(EnumType.STRING)
 	private Role role;
-
-	private Boolean isLocked;
-
-	private Boolean enabled;
+	private Boolean isLocked = false;
+	private Boolean enabled = false;
 
 	public User(String firstName, String lastName, String username, String email, String password, Role role) {
 		this.firstName = firstName;
