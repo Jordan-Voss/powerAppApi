@@ -1,8 +1,6 @@
-package com.jordan.powerApp.registration.token;
+package com.jordan.powerApp.model;
 
-import com.fasterxml.jackson.datatype.jsr310.deser.key.LocalDateTimeKeyDeserializer;
-import com.jordan.powerApp.user.User;
-import lombok.AllArgsConstructor;
+import com.jordan.powerApp.model.User;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

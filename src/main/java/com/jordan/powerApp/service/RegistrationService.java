@@ -1,11 +1,10 @@
-package com.jordan.powerApp.registration;
+package com.jordan.powerApp.service;
 
 import com.jordan.powerApp.email.EmailSender;
-import com.jordan.powerApp.registration.token.ConfirmationToken;
-import com.jordan.powerApp.registration.token.ConfirmationTokenService;
-import com.jordan.powerApp.user.Role;
-import com.jordan.powerApp.user.User;
-import com.jordan.powerApp.user.UserService;
+import com.jordan.powerApp.model.ConfirmationToken;
+import com.jordan.powerApp.request.RegistrationRequest;
+import com.jordan.powerApp.model.Role;
+import com.jordan.powerApp.model.User;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -16,13 +15,13 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class RegistrationService {
 
-	private final EmailValidator emailValidator;
+	private final EmailValidatorService emailValidatorService;
 	private final UserService userService;
 	private final ConfirmationTokenService confirmationTokenService;
 	private final EmailSender emailSender;
 
 	public String register(RegistrationRequest request) {
-		boolean isValidEmail = emailValidator.test(request.getEmail());
+		boolean isValidEmail = emailValidatorService.test(request.getEmail());
 
 		if (!isValidEmail) {
 			throw new IllegalStateException("Invalid Email");

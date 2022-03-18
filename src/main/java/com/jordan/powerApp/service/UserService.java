@@ -1,7 +1,8 @@
-package com.jordan.powerApp.user;
+package com.jordan.powerApp.service;
 
-import com.jordan.powerApp.registration.token.ConfirmationToken;
-import com.jordan.powerApp.registration.token.ConfirmationTokenService;
+import com.jordan.powerApp.model.User;
+import com.jordan.powerApp.model.ConfirmationToken;
+import com.jordan.powerApp.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

@@ -1,11 +1,11 @@
-package com.jordan.powerApp.registration;
+package com.jordan.powerApp.service;
 
 import org.springframework.stereotype.Service;
 
 import java.util.function.Predicate;
 
 @Service
-public class EmailValidator implements Predicate<String> {
+public class EmailValidatorService implements Predicate<String> {
 
     @Override
     public boolean test(String s) {

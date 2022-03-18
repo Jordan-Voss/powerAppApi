@@ -1,4 +1,4 @@
-package com.jordan.powerApp.registration;
+package com.jordan.powerApp.request;
 
 import lombok.*;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.jordan.powerApp.user;
+package com.jordan.powerApp.model;
 
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;

@@ -1,5 +1,7 @@
-package com.jordan.powerApp.registration.token;
+package com.jordan.powerApp.service;
 
+import com.jordan.powerApp.model.ConfirmationToken;
+import com.jordan.powerApp.repository.ConfirmationTokenRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

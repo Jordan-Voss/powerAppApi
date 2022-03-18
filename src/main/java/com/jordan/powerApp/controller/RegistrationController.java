@@ -1,7 +1,8 @@
-package com.jordan.powerApp.registration;
+package com.jordan.powerApp.controller;
 
+import com.jordan.powerApp.request.RegistrationRequest;
+import com.jordan.powerApp.service.RegistrationService;
 import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

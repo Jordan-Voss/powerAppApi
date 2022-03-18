@@ -1,4 +1,4 @@
-package com.jordan.powerApp.user;
+package com.jordan.powerApp.model;
 
 public enum Role {
 
