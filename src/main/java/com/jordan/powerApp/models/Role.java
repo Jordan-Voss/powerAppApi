@@ -21,6 +21,10 @@ public class Role {
 	@Column(length = 20)
 	private ERole name;
 
+	@ManyToOne
+	@JoinColumn(name = "user_id")
+	private User user;
+
 	public Role(ERole name) {
 		this.name = name;
 	}
